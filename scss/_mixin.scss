@@ -1,0 +1,8 @@
+@mixin title ($color) {
+    color: $color;
+    -webkit-text-stroke: 1px white;
+}
+
+.titulo-contacto {
+    @include title(white)
+}

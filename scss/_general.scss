@@ -1,0 +1,81 @@
+/*General*/
+body {
+    background-image: url(../assets/inicio-foto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+    color: white;
+    font-family: $fuente-principal;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    a.nav-link {
+        color: white;
+    }
+    li a:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        border-radius: 10px; 
+        font-size: 20px;
+    }
+}
+
+main {
+    margin: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+article {
+    border: 5px solid $color-marca;
+    padding: 80px;
+    margin: 150px;
+}
+
+.imagen-inicio {
+    max-width: 70px;
+    border-radius: 50%;
+}
+
+.titulo-inicio {
+    font-family: 'Raleway', sans-serif;
+    color: $color-marca;
+    background-color: transparent;
+    font-size: 900%;
+    text-align: center;
+    border: 5px;
+    padding: 15px;
+    margin: 200px;
+}
+
+.titulo-subra {
+    text-decoration: underline;
+    font-size: 400%;
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+} 
+
+@media (max-width: 767px) {
+    body {
+      background-size: 100% 100%;
+    }
+  
+    .titulo-inicio {
+      font-size: 1.5em;
+    }
+}

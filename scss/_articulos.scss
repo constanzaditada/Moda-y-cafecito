@@ -1,0 +1,39 @@
+/*Articulos*/
+main {
+    margin-top: 150px;
+    .flex-container-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .fondo-extra {
+            background-color: $color-marca;
+            color: black;
+            flex-basis: calc(45% - 10px);
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .texto-particular {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img {
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+.h5-link-articulo {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .fondo-extra {
+        flex-basis: calc(100% - 20px);
+    }
+}

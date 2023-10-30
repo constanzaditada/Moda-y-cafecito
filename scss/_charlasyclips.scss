@@ -1,0 +1,37 @@
+/*Charlas y clips*/
+.grid-container-2 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    div {
+        display: flex;
+        flex-direction: column;
+        .fs-1 {
+            margin: 20px;
+        }
+    }
+}
+.custom-video-size {
+    width: 600px; /*Ancho de video*/
+    height: 350px; /*Alto de video*/
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-2 div {
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .ratio-21x9 {
+        height: 150px;
+    }
+    .ratio-16x9 {
+        height: 300px;
+    }
+}

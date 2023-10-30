@@ -1,0 +1,50 @@
+/*Eventos*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.articulo {
+    border: 1px solid transparent;
+    padding: 50px;
+    background-color: $color-marca;
+    color: black;
+    .letra-negrita {
+        font-weight: bold;
+        font-size: 200%;
+    }
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .imagenes-art {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        ul li {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .articulo {
+      margin-bottom: 30px;
+    }
+  
+    .list-eventos {
+      padding-left: 0;
+      list-style-type: none;
+    }
+  
+    .list-eventos li {
+      margin-bottom: 10px;
+    }
+  
+    .imagenes-art img {
+      width: 100%;
+    }
+}
