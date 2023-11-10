@@ -1,10 +1,11 @@
 /*Articulos*/
 main {
-    margin-top: 150px;
+    margin-top: 80px;
     .flex-container-2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-top: 20px;
         .fondo-extra {
             background-color: $color-marca;
             color: black;
@@ -27,13 +28,26 @@ main {
     }
 }
 
+.titulo-articulos {
+    background-color: $color-fondos;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
 .h5-link-articulo {
     color: black;
     text-decoration: none;
 }
 
 @media (max-width: 767px) {
-    .fondo-extra {
+    main .flex-container-2 .fondo-extra {
         flex-basis: calc(100% - 20px);
+
+        .texto-particular {
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }

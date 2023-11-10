@@ -1,4 +1,14 @@
 /*Contacto*/
+.titulo-contact {
+  background-color: $color-fondos;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-group {
+  padding: 5px;
+}
 
 @media (max-width: 767px) {
     .contact-form {

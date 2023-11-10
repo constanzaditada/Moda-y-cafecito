@@ -1,13 +1,15 @@
 /*Eventos*/
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+.titulo-eventos {
+  background-color: $color-fondos;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .articulo {
     border: 1px solid transparent;
     padding: 50px;
+    margin-top: 20px;
     background-color: $color-marca;
     color: black;
     .letra-negrita {
@@ -30,21 +32,16 @@
     }
 }
 
-@media (max-width: 767px) {
-    .articulo {
-      margin-bottom: 30px;
-    }
-  
-    .list-eventos {
-      padding-left: 0;
-      list-style-type: none;
-    }
-  
-    .list-eventos li {
-      margin-bottom: 10px;
-    }
-  
-    .imagenes-art img {
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  .articulo {
+    padding: 50px;
+    border: 5px;
+    margin: 20px;
+  }
+  .contenido {
+    margin: 5px;
+  }
+  .imagenes-art {
+    grid-template-columns: 1fr;
+  }
 }

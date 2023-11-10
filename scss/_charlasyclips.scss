@@ -12,9 +12,17 @@
         }
     }
 }
+
 .custom-video-size {
-    width: 600px; /*Ancho de video*/
     height: 350px; /*Alto de video*/
+}
+
+.titulo-clips {
+    background-color: $color-fondos;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
 }
 
 @media screen and (max-width: 768px) {

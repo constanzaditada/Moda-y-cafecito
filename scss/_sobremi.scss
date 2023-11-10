@@ -1,39 +1,42 @@
 /*Sobre mi*/
 .row {
+  margin-bottom: 50px;
+  .custom-section {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: $color-fondos;
     margin-bottom: 50px;
-    .custom-section {
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: left;
-    }
-    .custom-image {
-        max-width: 75%;
-        height: auto;
-        margin-top: 20px;
-    }
+  }
+  .custom-image {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 
-.custom-bg-color {
-    background-color: $color-marca;
+.bg-custom {
+  background-color: $color-fondos;
 }
 
 .final-text {
-    color: $color-marca;
-    font-weight: bold;
-    -webkit-text-stroke: 1px black;
+  color: black;
+  background-color: $color-fondos;
+  font-weight: bold;
+  padding: 5px;
 }
 
 @media (max-width: 767px) {
-  .flex-container-1 .row {
-    flex-direction: column;
-    margin-bottom: 1rem;
+  .row {
+    flex-direction: row;
   }
 
-  .custom-image {
-    width: 100%;
+  .custom-section, .custom-image {
+    max-width: 100%;
   }
 
   .custom-section {
-    width: 100%;
+    margin-bottom: 5px;
   }
 }
